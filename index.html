@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob Havo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/weather.png" type="image/x-icon">
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="entrance-section">
+            <div class="lang">
+
+                <h2 id="title">Switching the language</h2>
+                <div id="div"></div><br>
+                <div id="languageSwitcher">
+                    <button class="lang-btn active" onclick="changeLanguage('en')"> ENG </button>
+                    <button class="lang-btn second" onclick="changeLanguage('uz')"> UZB </button>
+                    <button class="lang-btn thrid" onclick="changeLanguage('ru')"> RUS </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="entrance-section">
+            <!-- Weather section-->
+            <div id="weather-card">
+                <h2 id="weatherName">WEATHER</h2><br>
+                <img src="img/congress-hearings-weather-manipulation.jpeg" style="width: 200px; height: 200px;"
+                    alt="weather">
+                <div id="weather">
+                    <h1 id="weatherTitle">Weather time</h1>
+                    <p id="weatherSubtitle">Enter the name of the city and click the button for the data</p>
+                    <form id="weatherForm">
+                        <input type="text" id="weatherInput" class="weatherLangInput" required
+                            placeholder="name of the city....">
+                        <button type="submit" id="weatherBtn" class="weatherLangBtn">to obtain data</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Prayer section-->
+
+            <div class="prayer">
+                <div class="prayer-img">
+                    <h2 id="prayerTitle">PRAYER</h2><br>
+                    <img src="img/islam.jpg" style="width: 270px; height: 200px;" alt="weather">
+                </div>
+                <h1 id="prayerSubtitle">Prayer time</h1>
+                <p id="prayerDesc">Enter the name of the city and click the button for the data</p>
+                <form id="prayerForm">
+                    <input type="text" id="prayerInput" class="prayerLangInput" required
+                        placeholder="name of the city...">
+                    <button type="submit" id="prayerBtn" class="prayerLangBtn">to obtain data</button>
+                </form>
+
+                <div id="prayerInfo">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

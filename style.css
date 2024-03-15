@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: bisque;
+}
+
+.entrance-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.entrance-lang {
+    display: flex;
+    justify-content: center;
+}
+
+.lang-btn {
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    color: black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.lang-btn:hover {
+    background-color: red;
+    color: aliceblue;
+}
+
+.active {
+    background-color: red;
+    color: aliceblue;
+}
+
+#weather-card {
+  
+}
+
+.prayer,
+#weather {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#weatherForm {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+#prayerInput,
+#weatherInput {
+    outline: none;
+    padding: 16px 30px;
+    color: black;
+    font-size: 16px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+#prayerBtn,
+.weatherLangBtn {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: red;
+    color: aliceblue;
+    transition-duration: 0.5s;
+}
+
+#weatherBtn:hover,
+#prayerBtn:hover {
+    background-color: rgb(214, 23, 23);
+}
+
+.prayer-img img {
+    border-radius: 10px;
+}
+
+
+/* Response */
+
+@media screen and (max-width:440px) {
+    #weatherForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+}
