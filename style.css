@@ -43,9 +43,7 @@
     color: aliceblue;
 }
 
-#weather-card {
-  
-}
+#weather-card {}
 
 .prayer,
 #weather {
@@ -103,9 +101,18 @@
         justify-content: center;
         gap: 15px;
     }
+
     .entrance-section {
         display: flex;
         flex-direction: column;
+        gap: 50px;
+       text-align: center;
         
+    }
+    #weatherForm, #prayerForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
     }
 }
