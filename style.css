@@ -103,4 +103,9 @@
         justify-content: center;
         gap: 15px;
     }
+    .entrance-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
